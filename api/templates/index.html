@@ -77,11 +77,10 @@
         <h1>Gerador de Senha</h1>
         <form action="/submit" method="POST">
             <p>Quantos caracteres sua senha deve conter? </p>
-            <input type="text" name="name" id="name" placeholder="Digite a quantidade">
-            {{erro}}
+            <input type="text" name="name" id="name" placeholder="Digite a quantidade" value="{{erro}}">
             <input type="submit" value="Enviar">
         </form>
-        <label for="">Senha Gerada: </label>
+        <label>Senha Gerada: </label>
         <input type="text" value="{{msg}}">
     </main> 
 </body>
