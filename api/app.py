@@ -29,7 +29,7 @@ def gerar(quant):
 
     vet = "".join(vet)
     
-    return render_template("index.html", msg=vet)
+    return render_template("index.html", senha=vet)
 
 if __name__ == '__main__':
     app.run(debug=True)
