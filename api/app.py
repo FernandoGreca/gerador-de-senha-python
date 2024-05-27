@@ -19,11 +19,11 @@ def submit():
 def gerar(quant):
     vet = [0 for x in range(quant)]
 
-    caracteres_evitar = [34, 39, 44, 46, 94, 96]
+    caracteres_evitados = [34, 39, 44, 46, 94, 96]
 
     for i in range(quant):
         vet[i] = random.randint(33, 122)
-        while vet[i] in caracteres_evitar:
+        while vet[i] in caracteres_evitados:
             vet[i] = random.randint(33, 122)
         vet[i] = chr(vet[i])
 
